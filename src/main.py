@@ -16,7 +16,6 @@ import struct
 import sys
 import time
 
-
 espefuse_cmd = [
     ('espefuse.py -p %s summary'),
     ('espefuse.py -p %s burn_efuse DISABLE_DL_CACHE 1'),
