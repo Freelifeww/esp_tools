@@ -40,6 +40,7 @@ input_prinf_cmd = [
     ('fail','Project burning error, please save log, press any key to end'),
 ]
 
+
 #Terminal input processing
 def input_handle_funtion(input_string):
     for cmd_string in input_prinf_cmd:
