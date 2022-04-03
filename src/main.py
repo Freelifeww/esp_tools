@@ -79,7 +79,6 @@ def esp_file_tools_cmd(com_number):
         err_exit(ret,cmd_string)
 
 def main(custom_commandline=None):
-    print(input_prinf_cmd[1][0])
     com_number = input_handle_funtion(input_prinf_cmd[0][0])
     esp_file_tools_cmd(com_number)
     efuse_tools_cmd(com_number)
