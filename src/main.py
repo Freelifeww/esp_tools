@@ -17,7 +17,6 @@ import sys
 import time
 import esptool
 
-
 espefuse_cmd = [
     ('python3 espefuse.py -p %s summary'),
     ('python3 espefuse.py -p %s burn_efuse DISABLE_DL_CACHE 1'),
