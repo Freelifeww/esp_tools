@@ -17,7 +17,6 @@ import sys
 import time
 import esptool
 
-
 espefuse_cmd = [
     ('python3 espefuse.py -p %s summary'),
     ('python3 espefuse.py -p %s burn_efuse DISABLE_DL_CACHE 1'),
@@ -79,7 +78,6 @@ def esp_file_tools_cmd(com_number):
         err_exit(ret,cmd_string)
 
 def main(custom_commandline=None):
-    print(input_prinf_cmd[1][0])
     com_number = input_handle_funtion(input_prinf_cmd[0][0])
     esp_file_tools_cmd(com_number)
     efuse_tools_cmd(com_number)
